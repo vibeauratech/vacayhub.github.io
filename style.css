@@ -131,7 +131,6 @@ nav .portfolioicon-burger .line{
         bottom: 100%;
         z-index: 9;
         background-color:#111D67 ;
-        color: white;
         display: flex;
         width: auto;
         height: auto;
@@ -143,6 +142,7 @@ nav .portfolioicon-burger .line{
     }
     nav .links a{
         font-size: 20px;
+        color: white;
     }
 
     nav .portfolioicon-burger{
