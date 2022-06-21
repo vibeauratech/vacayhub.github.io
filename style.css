@@ -592,7 +592,7 @@ nav .portfolioicon-burger .line{
    object-fit: cover;
 }@media screen and (max-width: 768px){
     .service-home{
-        height: 160vh;
+        height: 150vh;
         left: 10px;
         width: 95%;
         margin-top: 20px;
@@ -923,11 +923,11 @@ nav .portfolioicon-burger .line{
 
 @media(max-width: 768px){
     .airlines{
-        height: 145vh;
+        height: 140vh;
         margin-top: 70px;
     }
     .footer-container{
-        height:136vh ;
+        height:132vh ;
         border-radius: 2px;
     }
     .footer-container .content-section .about-content h1{
