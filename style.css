@@ -12,6 +12,7 @@ header{
     min-height:5px;
 }
 nav{
+    min-height:5px;
     background-color:#FFF;
     z-index: 10;
     left: 0;
