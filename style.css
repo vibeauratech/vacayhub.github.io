@@ -302,6 +302,12 @@ nav .portfolioicon-burger .line{
     text-align: center;
 }
 
+@media only screen and (max-width:768px){
+    .entire h2{
+        font-size: 24px;
+    }
+}
+
 
 .pro-con{
     width: 100%;
@@ -412,6 +418,9 @@ nav .portfolioicon-burger .line{
         margin-right: 0%;
         margin-left:0% ;
     }
+    .pro-box{
+        background: transparent;
+    }
     
 }
 
@@ -510,6 +519,7 @@ nav .portfolioicon-burger .line{
     width: 100%;
     margin: auto;
     padding: 50px 0;
+    margin-top: 70px;
 }
 .blog-content h2{
     color: black;
