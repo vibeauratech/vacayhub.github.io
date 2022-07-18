@@ -21,13 +21,82 @@
     }
 } 
 
-header{
-    min-height:5px;
+
+.banner{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background: url(bnghg.jpg) no-repeat center;
+    background-size: cover;
 }
+.slider{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 0;
+}
+#slideImg{
+    width: 100%;
+    height: 100%;
+}
+.overlay{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #FFF;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
+}
+
+.overlay h1{
+    font-size: 54px;
+    margin-top: 14%;
+}
+.overlay p{
+    font-size: 20px;
+    font-weight: 200;
+    margin: 20px auto;
+    line-height: 25px;
+}
+.new-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid orangered;
+    padding: 16px 64px;
+    font-size: 14px;
+    font-weight: bold;    
+    background: orangered;
+    position: relative;
+    cursor: pointer;
+    border-radius: 6px;    
+}
+.new-btn:hover{
+    color: #FFF;
+    background: #111D67;
+    border: 1px solid #111D67;
+}
+.logo{
+    float: left;
+    display: flex;
+    color:white;    
+    font-size: 24px; 
+    font-weight: 700;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.logo strong{
+    color: rgb(28, 175, 106);
+}
+
 nav{
-    min-height:5px;
-    background-color:#FFF;
     z-index: 10;
+    background: rgba(0,0,0,0.75);
     left: 0;
     right: 0;
     height: 80px;
@@ -35,19 +104,6 @@ nav{
     position: fixed;
     top: 0;
     padding: 1.5rem 7%;
-}
-.logo{
-    float: left;
-    display: flex;
-    color: #111D67;    
-    font-size: 24px; 
-    font-weight: 700;
-    margin-left: -60px;
-    cursor: none;
-}
-
-.logo strong{
-    color: orangered;
 }
 
 nav .links{
@@ -69,7 +125,7 @@ nav .links li::after{
     content: '';
     width: 0%;
     height: 2px;
-    background: orangered;
+    background: rgb(28, 175, 106);
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -78,24 +134,24 @@ nav .links li:hover::after{
     width: 100%;
 }
 nav .links li a{
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 14px;   
 }
 nav .links li a:hover{
-    color: orangered;
+    color: rgb(28, 175, 106);
     font-weight: 700;
 }
 
 #sign-up{
     display: inline-block;
     text-decoration: none;
-    color: orangered;
-    border: 2px solid orangered;
+    color: rgb(28, 175, 106);
+    border: 2px solid rgb(28, 175, 106);
     padding: 12px 34px;
     font-size: 14px;
     font-weight: 700;       
-    background: white;
+    background: transparent;
     position: relative;
     cursor: pointer;
     border-radius: 5px;
@@ -104,10 +160,12 @@ nav .links li a:hover{
 }
 #sign-up:hover{
     color:#FFF;
-    background-color:#111D67; 
+    background-color:rgb(28, 175, 106); 
     border-radius: 3px;
-    border: 1px solid #111D67;
+    border: 1px solid rgb(28, 175, 106);
 }
+
+
 
 #portfolionav-toggle{
     position: absolute;
@@ -120,18 +178,21 @@ nav .portfolioicon-burger{
     position: absolute;
     right: 5%;
     top: 50%;
-    transform: translateY(-50%);   
+    transform: translateY(-50%);
+    
 }
-
 nav .portfolioicon-burger .line{
-    width: 30px;
-    height: 5px;
-    background-color: #111D67;
+    width: 25px;
+    height: 2px;
+    background-color:rgb(28, 175, 106) ;
     margin: 5px;
     border-radius: 3px;
     transition: all .3s ease-in-out;
 }
-@media screen and (max-width:1024px) {
+
+
+
+@media screen and (max-width:768px) {
     nav .links{
         float: none;
         position: fixed;
@@ -142,7 +203,7 @@ nav .portfolioicon-burger .line{
         top: 80px;
         bottom: 100%;
         z-index: 9;
-        background:#111D67;
+        background:rgb(28, 175, 106);
         display: flex;
         width: auto;
         height: auto;
@@ -186,70 +247,32 @@ nav .portfolioicon-burger .line{
         opacity: 0;
 
     }
-   
-}
-
-
-.banner{
-    width: 100%;
-    height: 600px;
-    position: relative;
-    overflow: hidden;
-    background: url(bnghg.jpg) no-repeat center;
-    background-size: cover;
-}
-.slider{
-    width: 100%;
-    height: 600px;
-    position: absolute;
-    top: 0;
-}
-#slideImg{
-    width: 100%;
-    height: 100%;
-}
-.overlay{
-    width: 100%;
-    height: 600px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: left;
-    margin-left: 5%;
-    color:black;
-    background: transparent;
-}
-
-.overlay h1{
-    font-size: 54px;
-    margin-top: 12%;
-}
-.overlay p{
-    font-size: 20px;
-    font-weight: 400;
-    margin: 20px auto;
-    line-height: 25px;
-    padding-bottom: 10px;
-}
-
-.new-btn{
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 2px solid orangered;
-    padding: 16px 64px;
-    font-size: 14px;
-    font-weight: bold;    
-    background: orangered;
-    position: relative;
-    cursor: pointer;
-    border-radius: 6px;    
-}
-.new-btn:hover{
-    color: #FFF;
-    background: #111D67;
-    border: 1px solid #111D67;
+      
+    .overlay h1{
+        font-size: 32px;
+        margin-top: 50%;
+    }
+    .overlay p{
+        font-size: 16px;
+        width: 90%;
+        font-weight: 200;
+        margin: 20px auto;
+        line-height: 1.4;
+    }
+    button{
+        width: 120px;
+        padding: 10px 0;
+        text-align: center;
+        margin: 14px 7px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid rgb(28, 175, 106);
+        background: transparent;
+        color: white;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
 }
 
 
