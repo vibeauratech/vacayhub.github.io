@@ -109,6 +109,12 @@ nav .links li a:hover{
     border: 1px solid #111D67;
 }
 
+@media screen and (max-width:1024px){
+    #sign-up{
+        display: none;
+    }
+}
+
 
 
 #portfolionav-toggle{
