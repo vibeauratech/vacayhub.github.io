@@ -219,6 +219,60 @@ nav .portfolioicon-burger .line{
     top: 0;
 }
 
+.bandana{
+    max-width: 90%;
+    margin: 0 auto;
+   
+}
+
+.hero{
+    max-width: 1400px;
+    justify-content: center;
+    align-items: center;
+    padding: 8em 0;
+}
+
+.hero h1{
+padding-bottom: 0.5em;
+font-size: clamp(3rem, 5vw,2rem);
+}
+
+.hero p{
+    width: 50%;
+}
+
+.btns-button{
+    align-items: center;
+    gap: 5em;
+    padding: 3em 0;
+}
+
+.btns a{
+    color: white;
+    
+}
+
+.btns{
+    padding: 1.2em 4em;
+    text-align: center;
+    border-radius: 8px;
+    color: #FFF;
+    background: orangered;
+
+}
+
+@media screen and (max-width:768px){
+    .hero h1{
+        padding-bottom: 0.5em;
+        font-size: clamp(1.5rem, 5vw,2rem);
+        }
+    
+}
+
+
+
+
+
 .products-list{
     margin-top:18%;
     display: flex;
@@ -291,6 +345,52 @@ nav .portfolioicon-burger .line{
     }
 
 }
+
+.check-form{
+    margin: 30px 0;
+    background: #fff;
+    margin-left: 6.5%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    padding: 10px 50px;
+    display: flex;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+@media only screen and (max-width:768px){
+    .check-form{
+        margin-left: 0%;
+    }
+}
+
+.check-form label{
+    display: block;
+}
+.check-form div{
+    padding: 20px;
+}
+
+.check-form input{
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+.guest{
+    flex: 1;
+}
+
+.new-submit{
+    background: #111D67;
+    border: 0;
+    outline: 0;
+    color: #FFF;
+    padding: 18px;
+    width: 350px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+
 .entire { 
     text-align: center;
     margin-top: 70px;
@@ -558,15 +658,24 @@ nav .portfolioicon-burger .line{
     .blog-right{
         margin-top: 30px;
     }
+    .blog-left h1{
+        font-size: 28px;
+    }
+    .blog-left p{
+        font-size: 16px;
+    }
+
 }
 
 #new-left{
 flex-basis: 60;
+flex-grow: 1;
 }
 
 
 #new-right{
     flex-basis: 35%;
+    flex-grow: 1;
 }
 #new-right h5{
     font-size: 22px;
@@ -583,9 +692,20 @@ flex-basis: 60;
 }
 
 
+
 @media screen and (max-width:768px){
     #new-right{
         margin-top: 30px;
+        text-align: center;
+    }
+    #new-right h5{
+        font-size:17px ;
+    }
+    #new-right h1{
+        font-size:28px ;
+    }
+    #new-right p{
+        font-size:15px;
     }
 }
 
