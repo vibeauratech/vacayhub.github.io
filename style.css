@@ -979,43 +979,13 @@ hr{
     margin: 20px auto;
 }
 .copyright{
-    text-align: left;
+    text-align: center;
     color: black;
-    margin-left: 100px;
     padding-bottom: 50px;
 }
 
-.underline{
-    width: 100%;
-    height: 5px;
-    background: #46509b;
-    border-radius: 3px;
-    position: absolute;
-    top: 25px;
-    left: 0; 
-    overflow: hidden;  
-}
 
-.underline span{
-    width: 15px;
-    height: 100%;
-    background: #FFF;
-    position: absolute;
-    border-radius: 3px;
-    top: 0;
-    left: 10px;
-    animation: moving 2s linear infinite;
-    
-}
 
-@keyframes moving{
-    0%{
-        left: -20x;
-    }
-    100%{
-        left: 100%;
-    }
-}
 
 @media (max-width: 700px) {
     footer{
