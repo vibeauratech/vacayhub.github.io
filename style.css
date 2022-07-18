@@ -152,8 +152,8 @@ nav .links li a:hover{
 #sign-up{
     display: inline-block;
     text-decoration: none;
-    color: rgb(28, 175, 106);
-    border: 2px solid rgb(28, 175, 106);
+    color: orangered;
+    border: 2px solid orangered;
     padding: 12px 34px;
     font-size: 14px;
     font-weight: 700;       
@@ -166,9 +166,9 @@ nav .links li a:hover{
 }
 #sign-up:hover{
     color:#FFF;
-    background-color:rgb(28, 175, 106); 
+    background-color:orangered; 
     border-radius: 3px;
-    border: 1px solid rgb(28, 175, 106);
+    border: 1px solid orangered;
 }
 
 
