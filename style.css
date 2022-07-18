@@ -219,60 +219,6 @@ nav .portfolioicon-burger .line{
     top: 0;
 }
 
-.bandana{
-    max-width: 90%;
-    margin: 0 auto;
-   
-}
-
-.hero{
-    max-width: 1400px;
-    justify-content: center;
-    align-items: center;
-    padding: 8em 0;
-}
-
-.hero h1{
-padding-bottom: 0.5em;
-font-size: clamp(3rem, 5vw,2rem);
-}
-
-.hero p{
-    width: 50%;
-}
-
-.btns-button{
-    align-items: center;
-    gap: 5em;
-    padding: 3em 0;
-}
-
-.btns a{
-    color: white;
-    
-}
-
-.btns{
-    padding: 1.2em 4em;
-    text-align: center;
-    border-radius: 8px;
-    color: #FFF;
-    background: orangered;
-
-}
-
-@media screen and (max-width:768px){
-    .hero h1{
-        padding-bottom: 0.5em;
-        font-size: clamp(1.5rem, 5vw,2rem);
-        }
-    
-}
-
-
-
-
-
 .products-list{
     margin-top:18%;
     display: flex;
@@ -342,6 +288,15 @@ font-size: clamp(3rem, 5vw,2rem);
         font-weight: 500;
         width: 70%;
         padding-bottom: 30px;
+    }
+    .banner{
+        height: 80vh;
+    }
+    .overlay{
+        height: 80vh;
+    }
+    .slider{
+        height: 80vh;
     }
 
 }
