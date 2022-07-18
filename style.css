@@ -204,6 +204,19 @@ nav .portfolioicon-burger .line{
     nav .portfolioicon-burger{
         display: block;
     }
+    nav :checked ~ .links {
+        bottom: 0;
+    }
+    nav :checked ~ .portfolioicon-burger .line:nth-child(1){
+        transform: translateY(10px) rotate(225deg);
+    }
+    nav :checked ~ .portfolioicon-burger .line:nth-child(3){
+        transform: translateY(-10px) rotate(-225deg);
+    }
+    nav :checked ~ .portfolioicon-burger .line:nth-child(2){
+        opacity: 0;
+
+    }
 }
 
 @media screen and (max-width:768px) {
