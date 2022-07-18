@@ -23,12 +23,14 @@
 
 
 .banner{
-    width: 100%;
+    width: 95%;
     height: 600px;
+    left: 2.5%;
     position: relative;
     overflow: hidden;
     background: url(bnghg.jpg) no-repeat center;
     background-size: cover;
+    border-radius: 10px;
 }
 .slider{
     width: 100%;
@@ -47,20 +49,22 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    text-align: center;
-    color: #FFF;
-    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
+    text-align: left;
+    color: black;
+    background: transparent;
 }
 
 .overlay h1{
     font-size: 54px;
     margin-top: 14%;
+    margin-left: 5%;
 }
 .overlay p{
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 400;
     margin: 20px auto;
     line-height: 25px;
+    margin-left: 5%;
 }
 .new-btn{
     display: inline-block;
@@ -73,7 +77,8 @@
     background: orangered;
     position: relative;
     cursor: pointer;
-    border-radius: 6px;    
+    border-radius: 6px; 
+    margin-left: 5%;   
 }
 .new-btn:hover{
     color: #FFF;
@@ -83,20 +88,21 @@
 .logo{
     float: left;
     display: flex;
-    color:white;    
+    color:#111D67;    
     font-size: 24px; 
     font-weight: 700;
-    margin-left: 0;
+    margin-left: -8%;
     cursor: pointer;
+    background: transparent;
 }
 
 .logo strong{
-    color: rgb(28, 175, 106);
+    color: orangered;
 }
 
 nav{
     z-index: 10;
-    background: rgba(0,0,0,0.75);
+    background: #fff;
     left: 0;
     right: 0;
     height: 80px;
@@ -125,7 +131,7 @@ nav .links li::after{
     content: '';
     width: 0%;
     height: 2px;
-    background: rgb(28, 175, 106);
+    background: orangered;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -134,12 +140,12 @@ nav .links li:hover::after{
     width: 100%;
 }
 nav .links li a{
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 14px;   
 }
 nav .links li a:hover{
-    color: rgb(28, 175, 106);
+    color: orangered;
     font-weight: 700;
 }
 
@@ -184,7 +190,7 @@ nav .portfolioicon-burger{
 nav .portfolioicon-burger .line{
     width: 25px;
     height: 2px;
-    background-color:rgb(28, 175, 106) ;
+    background-color:#111D67;
     margin: 5px;
     border-radius: 3px;
     transition: all .3s ease-in-out;
@@ -203,7 +209,7 @@ nav .portfolioicon-burger .line{
         top: 80px;
         bottom: 100%;
         z-index: 9;
-        background:rgb(28, 175, 106);
+        background:#111D67;
         display: flex;
         width: auto;
         height: auto;
@@ -254,9 +260,10 @@ nav .portfolioicon-burger .line{
     }
     .overlay p{
         font-size: 16px;
-        width: 90%;
+        width: 100%;
         font-weight: 200;
         margin: 20px auto;
+        padding-left: 5%;
         line-height: 1.4;
     }
     button{
