@@ -700,12 +700,15 @@ flex-grow: 1;
     }
     #new-right h5{
         font-size:17px ;
+        text-align: center;
     }
     #new-right h1{
         font-size:28px ;
+        text-align: center;
     }
     #new-right p{
         font-size:15px;
+        text-align: center;
     }
 }
 
