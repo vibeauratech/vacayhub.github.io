@@ -427,7 +427,8 @@ nav .portfolioicon-burger .line{
 }
 @media only screen and (max-width:525px){
     .icon-flex .icon-text{
-        margin-right: 9px;
+        margin-right: 0px;
+        padding-right: 25px;
     }
     .icon-flex .icon-text i{
         border: 2px solid #ccc;
