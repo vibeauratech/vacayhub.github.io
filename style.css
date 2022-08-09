@@ -797,47 +797,6 @@ flex-grow: 1;
     width: 45%;
 }
 
-#reverse{
-    margin-top: 200px;
-}
-
-#reverse-content{
-    float: right;    
-    width: 40%;
-    
-}
-#reverse-content .about-content{
-    margin-left: 100px;
-}
-
-#reverse-content h5{
-    color: orangered;
-    font-weight: bold;
-    font-size: 17px;
-    margin-top: 30px;
-}
-#reverse-content h1{
-    font-size: 30px;
-}
-#reverse-image{
-    float: left;
-    width: 60%;
-    display: flex;
-    margin-top: 50px;
-    justify-content: space-between;
-}
-#reverse-image img{
-    width: 200px;
-    height:350px ;
-    border-radius: 10px;
-    object-fit: cover;
-    margin-right: 30px;
-    
-}
-#reverse-image .middle-image img{
-    margin-top: -50px;
-}
-
 .image-section img{
     width: 500px;
     height: 400px;
@@ -926,55 +885,6 @@ flex-grow: 1;
         height: 200px;
         object-fit: cover;
     }
-    #reverse{
-        margin-top: 70px;
-    }
-    #reverse-content{
-        float: none;
-        width: 100%;
-    }
-    #reverse-image{
-        float: none;
-        display: block;
-        
-    }
-    #reverse-content .about-content{
-        margin-left: 0px;
-        text-align: center;
-        width: 100%;
-    }
-    
-    #reverse-content h5{
-        color: orangered;
-        font-weight: bold;
-        font-size: 18px;
-        margin-top: 30px;
-        padding-bottom: 10px;
-        text-align: center;
-        
-    }
-    #reverse-content h1{
-        font-size: 30px;
-        text-align: center;
-    }
-    #reverse-content p{
-        font-size: 16px;
-        text-align: center;
-        font-weight: 500;
-        margin-left: 15px;
-    }
-    
-    #reverse-image img{
-        width: 100%;
-        height:100%;
-        border-radius: 2px;
-        object-fit: cover;
-        margin-left: -72px;
-        
-    }
-    #reverse-image .middle-image img{
-        margin-top: 20px;
-    }
 }
 
 
@@ -984,18 +894,25 @@ flex-grow: 1;
     justify-content: space-between; 
 }
 .grid-left{
-    flex-basis: 60%;
+    flex-basis: 50%;
     display: grid;
     grid-template-columns: repeat(16,minmax(10px,1fr));
-    grid-template-rows: repeat(10,minmax(50px,1fr));
+    grid-template-rows: repeat(9,minmax(50px,1fr));
 }
 
 .grid-left .item-one{
      grid-column-start: 1;
-     grid-column-end: 6;
-     grid-row-start: 2;
-     grid-row-end: 10;
+     grid-column-end: 7;
+     grid-row-start: 3;
+     grid-row-end: 9;
      border-radius: 10px;
+}
+@media screen and (max-width: 768px){
+    .grid-left .item-one{
+        grid-column-start: 1;
+        grid-column-end: 8;
+       
+   }
 }
 .grid-left .item-one img{
     width: 100%;
@@ -1005,13 +922,20 @@ flex-grow: 1;
 }
 
 .grid-left .item-two{
-    grid-column-start: 7;
-    grid-column-end: 11;
+    grid-column-start: 5;
+    grid-column-end: 10;
     grid-row-start: 1;
-    grid-row-end: 8;
+    grid-row-end: 7;
+    z-index: 99;
     border-radius: 10px;
    background: #72a188;
-
+}
+@media screen and (max-width: 768px){
+    .grid-left .item-two{
+        grid-column-start: 6;
+        grid-column-end: 12;
+       
+   }
 }
 .grid-left .item-two img{
     width: 100%;
@@ -1020,10 +944,18 @@ flex-grow: 1;
     border-radius: 10px;
 }
 .grid-left .item-three{
-    grid-column-start: 12;
-    grid-column-end: 18;
-    grid-row-start: 2;
-    grid-row-end: 10;
+    grid-column-start: 8;
+    grid-column-end: 14;
+    grid-row-start: 3;
+    grid-row-end: 9;
+    
+}
+@media screen and (max-width: 768px){
+    .grid-left .item-three{
+        grid-column-start: 10;
+        grid-column-end: 18;
+       
+   }
 }
 .grid-left .item-three img{
     width: 100%;
@@ -1034,7 +966,18 @@ flex-grow: 1;
 
 
 .grid-right{
-    flex-basis: 30%;
+    flex-basis: 45%;
+    margin-top: 2%;
+}
+.grid-right h3{
+    color: orangered;
+}
+.grid-right h2{
+    font-size: 48px;
+    margin-top: 4%;
+}
+.grid-right p{
+    font-size: 16px;
 }
 @media screen and (max-width: 768px){
     .grid-flex{
@@ -1045,6 +988,18 @@ flex-grow: 1;
     }
     .grid-right{
         flex-basis: 100%;
+    }
+    .grid-right h3{
+        font-size: 14px;
+        color: orangered;
+    }
+    .grid-right h2{
+        font-size: 22px;
+        margin-top: 4%;
+    }
+    .grid-right p{
+        margin-top: 3%;
+        font-size: 16px;
     }
 }
 
@@ -1367,3 +1322,4 @@ textarea{
         flex-grow: 1;
     }
 }
+
