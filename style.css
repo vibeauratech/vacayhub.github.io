@@ -1068,7 +1068,7 @@ flex-grow: 1;
 
 @media screen and (max-width: 768px){
     .check{
-        margin: 10%;
+        margin-top: 10%;
     }
     .check-box{
         width: 100%;
