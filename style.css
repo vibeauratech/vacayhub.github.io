@@ -1065,6 +1065,12 @@ flex-grow: 1;
     font-size: 14px;
     background: orangered;
 }
+@media screen and (max-width: 425px){
+     .check{
+        width: 90%;
+     }
+
+}
 
 @media screen and (max-width: 768px){
     .check{
