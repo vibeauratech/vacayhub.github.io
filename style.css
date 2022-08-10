@@ -1021,6 +1021,73 @@ flex-grow: 1;
     }
 }
 
+.check{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 7%;
+}
+.check h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 48px;
+}
+.check p{
+    margin: 0 auto;
+    width: 40%;
+    text-align: center;
+}
+.check-box{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding:0 0px;
+    display: flex;
+    border-radius: 8px;
+    justify-content: space-between;
+    border: 2px solid #ccc;
+    flex-basis: 50%;
+}
+.check-box input{
+    background: transparent;
+    align-self: center;
+    padding-top: 15px;
+    margin-left: 10px;
+    border: 0;
+    outline: none;
+}
+
+.check-box p{
+    text-align: center;
+    width: 100%;
+    padding: 15px 35px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    background: orangered;
+}
+
+@media screen and (max-width: 768px){
+    .check{
+        margin: 10%;
+    }
+    .check-box{
+        width: 100%;
+        display: flex;
+        border: 2px solid #ccc;
+        margin: 0 auto;
+        margin-top: 20px;
+        flex-basis: 100%;
+    }
+    .check h2{
+        font-size: 20px;
+    }
+    .check p{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+}
+
 
 
 
