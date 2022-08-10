@@ -452,7 +452,15 @@ nav .portfolioicon-burger .line{
         margin-top: 5%;
     }
     
+}
 
+.nav .logo{
+    margin-left: -60px;
+}
+@media only screen and (max-width:768px){
+    .nav .logo{
+        margin-left: -12px;
+    }
 }
 
 .vikings{
