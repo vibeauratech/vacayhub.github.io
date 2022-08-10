@@ -446,6 +446,11 @@ nav .portfolioicon-burger .line{
         margin-top: 5%;
         
     }
+    .search-image{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
     
 
 }
