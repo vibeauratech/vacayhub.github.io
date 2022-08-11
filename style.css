@@ -1025,6 +1025,7 @@ flex-grow: 1;
     width: 80%;
     margin: 0 auto;
     margin-top: 7%;
+    border: 2px solid #111D67;
 }
 .check h2{
     text-align: center;
@@ -1036,62 +1037,14 @@ flex-grow: 1;
     width: 40%;
     text-align: center;
 }
-.check-box{
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 30px;
-    padding:0 0px;
-    display: flex;
-    border-radius: 8px;
-    justify-content: space-between;
-    border: 2px solid #ccc;
-    flex-basis: 50%;
-}
-.check-box input{
-    background: transparent;
-    align-self: center;
-    padding-top: 15px;
-    margin-left: 10px;
-    border: 0;
-    outline: none;
-}
 
-.check-box p{
-    display: none;
-}
-@media screen and (max-width: 425px){
-    .check-box p{
-        text-align: center;
-        width: 100%;
-        padding: 15px 15px;
-        border-radius: 5px;
-        color: #fff;
-        font-size: 14px;
-        background: orangered;
-    }
-    .check-box input{
-        background: transparent;
-        align-self: center;
-        padding-top: 15px;
-        margin-left: 5px;
-        border: 0;
-        outline: none;
-    }
-}
 
 
 @media screen and (max-width: 768px){
     .check{
         margin-top: 30%;
     }
-    .check-box{
-        width: 100%;
-        display: flex;
-        border: 2px solid #ccc;
-        margin: 0 auto;
-        margin-top: 20px;
-        flex-basis: 100%;
-    }
+
     .check h2{
         font-size: 20px;
     }
@@ -1102,8 +1055,24 @@ flex-grow: 1;
     }
 }
 
+.check-box{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    background: #111D67;
 
-
+}
+.check-box input{
+    background: #72a188;
+    outline: 0;
+    border: none;
+    flex-basis: 50%;
+}
+.check-box p{
+    background: orangered;
+    color: #fff;
+    flex: 50%;
+}
 
 footer{
     width: 100%;
@@ -1113,7 +1082,7 @@ footer{
     font-size: 13px ;
     line-height: 20px;
     margin-top: 50px;
-}
+}  
 
 .feeter-row{
     width: 85%;
