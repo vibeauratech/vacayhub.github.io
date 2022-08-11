@@ -1066,15 +1066,29 @@ flex-grow: 1;
     background: orangered;
 }
 @media screen and (max-width: 425px){
-     .check{
-        width: 90%;
-     }
-
+    .check-box p{
+        text-align: center;
+        width: 100%;
+        padding: 15px 15px;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 14px;
+        background: orangered;
+    }
+    .check-box input{
+        background: transparent;
+        align-self: center;
+        padding-top: 15px;
+        margin-left: 5px;
+        border: 0;
+        outline: none;
+    }
 }
+
 
 @media screen and (max-width: 768px){
     .check{
-        margin-top: 10%;
+        margin-top: 30%;
     }
     .check-box{
         width: 100%;
