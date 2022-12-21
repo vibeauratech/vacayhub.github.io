@@ -68,6 +68,7 @@ nav{
 .hero-cta{
     width: 90%;
     margin: 0 auto;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,10 +82,6 @@ nav{
     font-family:'MonumentExtended-Regular' ;
 }
 
-.hero-cta h2:hover{
-    transform: translate(-2px, -3px);
-    transition: all ease 0.5s;
-}
 
 .hero-cta p{
     font-size: 20px;
@@ -96,6 +93,7 @@ nav{
     position: relative;
     width: 90%;
     margin: 0 auto;
+    margin-top: 140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -127,6 +125,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    flex-basis: 42%;
 }
 
 .white-box div{
