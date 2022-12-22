@@ -19,18 +19,13 @@
 }
 
 
-.hero{
-    height: 100vh;
-    background: url(Hero.png);
-    background-size: cover;
-    padding-top: 30px;
-}
-
 
 
 nav{
-    width: 90%;
-    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    padding: 1.5em 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,15 +60,30 @@ nav{
     transform: translate(0px,0px);
 }
 
+.hero-con{
+    background: url(Hero.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .hero-cta{
     width: 90%;
     margin: 0 auto;
-    margin-top: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #fff;
+}
+
+
+.hero-cta div{
+    text-align: center;
 }
 
 .hero-cta h2{
@@ -87,25 +97,12 @@ nav{
     font-size: 20px;
 }
 
-
-
-.notes{
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 140px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.arrow-con{
-    flex-basis: 55%;
-}
-
 .arrow{
     width: 70px;
     height: 70px;
+    position: absolute;
+    top: 85%;
+    text-align: center;
     border-radius: 50%;
     background: #262626;
     display: flex;
@@ -118,49 +115,19 @@ nav{
     transform: rotate(90deg);
 }
 
-.white-box{
-    background: #fff;
-    color: #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    flex-basis: 42%;
-}
-
-.white-box div{
-    flex-basis: 55%;
-}
-
-.white-box button{
-    width: 120px;
-    height: 50px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.white-box button:hover{
-    background-color: #BC0B16;
-    transform: translate(2px, -3px);
-    transition: all ease 0.5s;
-}
 
 
 @media screen and (max-width:1200px){
-    .hero{
-        height: 100vh;
-        padding-top: 30px;
+    .hero-con{
         background: url(pexels-pixabay-260409.jpg);
         background-size: cover;
     }
 
-
-    .hero-cta{
-        align-items: flex-start;
+    .hero-cta div{
+        text-align: left;
+        color: #fff;
     }
+
     .hero-cta h2{
         font-size: 28px;
         font-family:'MonumentExtended-Regular' ;
