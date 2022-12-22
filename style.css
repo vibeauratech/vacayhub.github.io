@@ -155,22 +155,6 @@ nav{
     .arrow img{
         height: 20px;
     }
-
-    .white-box{
-        flex-basis: 100%;
-        padding: 5px 10px;
-    }
-
-    .white-box div{
-        flex-basis: 65%;
-    }
-
-
-    .white-box span{
-        font-size: 13px;
-    }
-    
-
 }
 
 
@@ -179,160 +163,109 @@ nav{
 
 
 
-.vertical-line{
-    display: flex;
-    justify-content: right;
-}
-.vertical-line p{
-    float: right;
-    margin-right:100px ;
-    margin-top: -70px;
-}
-.v{
-    height: 30px;
-    border: 1px solid #ccc;
-    margin-top: -75px;
-    margin-right: 70px;
+
+.showcase{
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 50px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
 }
 
-@media (max-width: 700px){
-    .vertical-line{
-        display: block;
-    }
-    .v{
-        height: 30px;
-        border: 1px solid #ccc;
-        margin-top: 20px;
-        margin-right: 70px;
-    }
-    .vertical-line p{
-        float: none;
-        text-align: center;
-       display: none;
-        margin-top: 30px;
-        padding-bottom: 30px;
-    }
-    .v{
-        height: 30px;
-        border: 1px solid #ccc;
-        margin-top: -75px;
-        margin-right: 70px;
-        display: none;
-    }
-}
 
-.signup-container{
+.showcase ul{
     width: 100%;
-    min-height: 0vh;
+}
+
+.showcase ul li{
+    list-style: none;
+    border-bottom: .05rem solid #000;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.link{
     display: flex;
+    padding: 2rem 0 2rem 0;
+    z-index: 2;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    padding: 5%;
-    margin-top: 100px;
 }
-.signup-box{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 800px;
-    flex-wrap: wrap;
+
+.link span{
+    display: block;
+    z-index: 2;
+    mix-blend-mode: difference;
+    display: inline-block;
+    position: relative;
+    font-size: 3.4rem;
+    text-transform: uppercase;
 }
-.signup-image,.signup-text{
-    flex-basis: 50%;
-    flex-grow: 1;
+
+.link span > img{
+    mix-blend-mode: difference;
+    z-index: 2;
 }
-.signup-image img{
-    width: 350px;
-    height: 550px;
+
+.right-arrow{
+    width: 40px;
+    height: 40px;
     object-fit: cover;
-    display: block;
-    flex-grow: 1;
-}
-.signup-text{
-    background: #111D67;
-    color: white;
-    padding: 40px 8%;
-    min-width: 250px;
-}
-.signup-text h2{
-    font-weight: 600;
-}
-.signup-text span{
-    font-size: 12px;
-}
-.signup-text span a{
-    text-decoration: none;
-    color: orangered;
-    font-weight: 500;
 }
 
-.google-link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 4px;
-    border: 2px solid white;
-    text-decoration: none;
-    color: white;
-    font-size: 13px;
-    margin: 20px 0;
-}
-.google-link img{
-    width: 20px;
-    margin-right: 10px;
-}
-.signup-text h4{
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-.input-field{
-    padding: 10px;
-    border-radius: 4px;
-    border: 2px solid white;
-    color: #C7E4E3;
-    outline: none;
-    display: block;
-    width: 100%;
-    margin: 5px 0 10px;
-    background: transparent;
-    
-}
-.signup-form label{
-    font-weight: 500;
-    font-size: 12px;
-}
-.signup-form ::placeholder{
-    color: rgb(148, 144, 144);
-}
-.form-row{
-    display: flex;
-    align-items: center;
-}
-.form-row input{
-    margin-right: 6px;
+.hover-reveal{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all .5s ease-out;
 }
 
-textarea{
+.hover-reveal img{
     width: 100%;
-    padding: 10px;
-    margin: 15px 0;
-    box-sizing: border-box;
-    border:2px solid white ;
-    color: #C7E4E3;
-    outline: none;
-    background: transparent;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    transition: text-transform .5s ease-out;
 }
-@media (max-width: 700px){
-    .signup-image img{
-        width: 360px;
-        height: 180px;
-        margin-top: 40px;
-        padding-bottom: 40px;
-        object-fit: cover;
-        display: block;
-        flex-grow: 1;
+
+@media screen and (max-width:768px){
+    .showcase{
+        margin-top: 15%;
     }
+
+    .link span{
+        font-size: 1.2rem;
+    }
+
+    .right-arrow{
+        width: 30px;
+        height: 30px;
+    }
+
+    .link span > img{
+        height: 18px;
+    }
+
+    .hover-reveal{
+        width: 220px;
+    }
+
 }
+
+
+
+
+
 
