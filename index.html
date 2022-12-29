@@ -13,7 +13,7 @@
 
     <nav>
        <img src="logo.png" alt="">
-       <div class="round"> <p>Menu</p> </div>
+       <div class="round"> <p onclick="myFunction()" id="myDIV">Menu</p> </div>
     </nav>
 
 
@@ -187,6 +187,18 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="menu.js"></script>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myDIV");
+          if (x.innerHTML === "Menu") {
+            x.innerHTML = "Close";
+          } else {
+            x.innerHTML = "Menu";
+          }
+        }
+     </script>
    
   
 </body>  
