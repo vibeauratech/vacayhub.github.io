@@ -13,7 +13,40 @@
 
     <nav>
        <img src="logo.png" alt="">
-       <div class="round"> <p onclick="myFunction()" id="myDIV">Menu</p> </div>
+      
+
+      <div class="round" id="cart-icon">
+        <p class="cart-icon">Menu</p> 
+      </div>
+
+    <div class="cart">
+          <div class="round" id="close-cart">
+            <p  class="close-cart">Close</p> 
+          </div>
+
+        <div class="menu">
+            <h2>Quick Links</h2>
+
+            <div class="links">
+                <li><a href="">Home</a></li>
+                <li><a href="">Landlord</a></li>
+                <li><a href="">Tenants</a></li>
+                <li><a href="">Contact Us</a></li>              
+            </div>
+
+            <div class="spec">
+                <span>SOCIALS</span>
+
+                <div>
+                    <p>INSTAGRAM</p>
+                    <p>TWITTER</p>
+                    <p>FACEBOOK</p>
+                </div>
+            </div>
+
+        </div>                 
+    </div>
+
     </nav>
 
 
@@ -189,16 +222,7 @@
     <script src="script.js"></script>
     <script src="menu.js"></script>
 
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myDIV");
-          if (x.innerHTML === "Menu") {
-            x.innerHTML = "Close";
-          } else {
-            x.innerHTML = "Menu";
-          }
-        }
-     </script>
+  
    
   
 </body>  
