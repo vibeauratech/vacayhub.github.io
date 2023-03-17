@@ -12,7 +12,7 @@
 <body id="my-scrollbar"> 
 
     <nav>
-       <img src="logo.png" alt="">
+       <img src="logo.png" alt="" class="logo">
       
 
       <div class="round" id="cart-icon">
@@ -28,9 +28,9 @@
             <h2>Quick Links</h2>
 
             <div class="links">
-                <li><a href="">Home</a></li>
-                <li><a href="">Landlord</a></li>
-                <li><a href="">Tenants</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Champions</a></li>
                 <li><a href="">Contact Us</a></li>              
             </div>
 
@@ -52,7 +52,7 @@
 
     <div class="hero-con">
         <div class="hero-cta">
-            <div>
+            <div class="explore">
                 <h2>RACING REDEFINED</h2>
                 <p>Igniting passion to race like never before. </p>
             </div>
@@ -69,7 +69,7 @@
 
         <div class="select-menu">
             <div class="select-btn">
-                <span class="sBtn-text">Si valle</span>
+                <span class="sBtn-text">Explore</span>
             </div> 
         </div>
     </div>
@@ -80,8 +80,17 @@
         </div>
 
         <div class="classic">
-            <h2>CLASSIC COMPETITION:</h2>
-            <h2>REAL PLAYERS</h2>
+            <h2>
+                <span id="create">CLASSIC</span>
+            </h2>
+            <h2>
+                <span id="create">COMPETITION:</span>
+            </h2>
+
+            <h2>
+                <span id="create">REAL PLAYERS</span>
+            </h2>
+           
             <div class="comp-details">
                 <div>
                     <p>TOURNAMENT</p>
@@ -96,12 +105,11 @@
                     <span>2023</span>
                 </div>
 
-
             </div>
         </div>
     </div>
 
-    <div style="width: 80%; margin: 0 auto; margin-top: 10%;">
+    <div class="box" style="width: 70%; margin: 0 auto; margin-top: 10%;">
         <img src="pexels-erik-mclean-5023586 (1).jpg" alt="" style="width: 100%;">
     </div>
 
@@ -173,8 +181,8 @@
 
     <div class="footer">
         <div class="left">
-            <h2>Ready to race?</h2>
-            <p>It's game time.</p>
+            <h2 id="create">Ready to race?</h2>
+            <p id="create">It's game time.</p>
         </div>
 
         <div class="right">
@@ -219,7 +227,20 @@
      <p class="copyright"> specialized&copy; 2022 - All right reserved</p>   
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js "></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.146.0/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+   
+
+
+
     <script src="script.js"></script>
+    <script src="preload.js"></script> 
     <script src="menu.js"></script>
 
   
