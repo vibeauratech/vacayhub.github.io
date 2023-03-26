@@ -4,11 +4,34 @@ var tl = gsap.timeline({
     }
 })
 
-gsap.from(".logo", 0.9, {
+gsap.from(".text", 0.8, {
+    y : -170,
+    opacity : 0,
+    ease :" power2.inOut",
+    delay: 1
+  })
+  
+  gsap.from(".loader", 1, {
+    y : 50,
+    opacity : 0,
+    ease :" power4.inOut",
+    delay: 2
+  })
+  
+  
+  gsap.to(".preloader", 1.5, {
+    top : "-150%",
+    ease :" power4.inOut",
+    delay: 3
+  })
+
+
+
+gsap.from(".logo", 1.8, {
     y : -50,
     opacity : 0,
     ease :" power4.inOut",
-    delay: 0.8,
+    delay: 5,
     stagger : {
         amount : 0.3,
     }
@@ -19,19 +42,19 @@ gsap.from(".explore", 0.9, {
     y : 50,
     opacity : 0,
     ease :" power4.inOut",
-    delay: 1.2,
+    delay: 5.2,
     stagger : {
-        amount : 0.7,
+        amount : 7.7,
     }
 })
 
 gsap.from(".arrow", 0.9, {
    scale: 0.1,
    opacity : 0,
-   delay: 1.6,
+   delay: 5.6,
 })
 
-gsap.to(".arrow", 0.9, {
+gsap.from(".arrow", 0.9, {
     y : 20,
     yoyo : true,
     repeat : -1,
@@ -43,7 +66,7 @@ gsap.to(".arrow", 0.9, {
 gsap.to("#create", {
     scrollTrigger :{
         trigger:"#create",
-        toggleActions: "restart pause reverse pause " 
+        toggleActions: "restart none none none " 
       }, 
     y : "0%",
     duration : 0.9,
@@ -53,9 +76,9 @@ gsap.to("#create", {
 gsap.to(".box", {
     scrollTrigger :{
       trigger:".box",
-      toggleActions: "restart pause reverse pause "
+      toggleActions: "restart none none none " 
     }, 
-    scale: 1.3,
+    scale: 1.1,
     duration : 2,
     delay: 0.3
 })

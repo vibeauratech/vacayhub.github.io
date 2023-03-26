@@ -9,6 +9,71 @@
 } 
 
 
+html{
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.preloader{
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #BC0B16;
+    color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: all ease 1.2s;
+}
+
+.preload-con{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'satoshi-regular';
+    font-size: 20px;
+}
+
+.pre-text img{
+    position: relative;
+    width: 100%;
+    animation: circularText 15s linear infinite;
+}
+
+@keyframes circularText{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.smooth-scroll-wrapper{
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+
 @font-face {
     font-family:'MonumentExtended-Regular' ;
     src: url(MonumentExtended-Regular.otf);
@@ -29,9 +94,28 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 7;
     color: #fff;
 }
+
+nav span{
+    width: 100px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+nav span:hover{
+    background: #BC0B16;
+    transform: translate(-2px, -3px);
+    transition: all ease 0.8s;
+}
+
 
 
 .round{
@@ -40,7 +124,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #262626;
+    background: #000;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1)
@@ -143,11 +227,30 @@ nav{
         width: 80%;
     }
 
+    .smooth-scroll-wrapper{
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        overflow: hidden;   
+    }
+
 }
 
 
 .hero-con{
-    background: url(Hero.png);
+    background: url(pexels-pixabay-39693.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-con .overlay{
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -187,10 +290,10 @@ nav{
     width: 70px;
     height: 70px;
     position: absolute;
-    top: 85%;
+    top: 75%;
     text-align: center;
     border-radius: 50%;
-    background: #262626;
+    background: #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,8 +308,7 @@ nav{
 
 @media screen and (max-width:1200px){
     .hero-con{
-        background: url(pexels-pixabay-260409.jpg);
-        background-size: cover;
+      height: 100vh;
     }
 
     .hero-cta div{
@@ -221,7 +323,7 @@ nav{
     
     .hero-cta p{
         font-size: 14px;
-        font-family:'MonumentExtended-Regular';
+        margin-top: 10px;
     }
 
     .arrow-con{
@@ -233,7 +335,6 @@ nav{
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        background: #262626;
         display: flex;
         justify-content: center;
         align-items: center;
