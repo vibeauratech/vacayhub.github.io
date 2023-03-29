@@ -83,4 +83,18 @@ gsap.to(".box", {
     delay: 0.3
 })
 
+gsap.from("#domino", {
+    scrollTrigger :{
+      trigger:"#domino",
+      toggleActions: "restart none none none " 
+    }, 
+
+    y: 50,
+    opacity : 0,
+    ease :" power4.inOut",
+    delay: 1
+})
+
+
+
 
