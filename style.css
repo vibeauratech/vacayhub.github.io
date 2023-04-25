@@ -9,14 +9,6 @@
 } 
 
 
-html{
-    overflow-x: hidden;
-}
-
-body{
-    overflow-x: hidden;
-    width: 100%;
-}
 
 .preloader{
     position: fixed;
@@ -58,24 +50,7 @@ body{
 }
 
 
-.smooth-scroll-wrapper{
-    position: fixed;
-    z-index: 5;
-    left: 0;
-    right: 0;
-    overflow: hidden;
 
-}
-
-@media screen and (max-width:990px){
-    .smooth-scroll-wrapper{
-        position: fixed;
-        z-index: 0;
-        left: 0;
-        right: 0;
-        overflow: hidden;   
-    }
-}
 
 /* width */
 ::-webkit-scrollbar {
